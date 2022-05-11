@@ -61,15 +61,25 @@ let student = {
         age : 35,
     }
 }
+
 for(let i = 0; i < student.subjects.length; i++){
     console.log(student.subjects[i])
   }
 
 let fullName = student.firstName + ' ' + student.lastName;
+let student2 = {
+    fullName :student.firstName + ' ' + student.lastName,
+    age : 34,
+    subjects : ['Sports','History','Georgraphy','Math','Art'] ,
+    roommate :{
+        fullName : 'Luis Suarez',
+        age : 35,
+    }
+}
+console.log(student2.fullName)
+let result = student2.fullName + ' ' +'არის' + ' ' + student2.age + ' '  + 'წლის' + ' ' + 'და' + ' ' + 'მისი' + ' ' + 'რუმმეითი' + ' ' + 'არის' + ' ' + student2.roommate.fullName;
 
-let result = student.fullName + ' ' +'არის' + ' ' + student.age + ' '  + 'წლის' + ' ' + 'და' + ' ' + 'მისი' + ' ' + 'რუმმეითი' + ' ' + 'არის' + ' ' + student.roommate.fullName;
-
-let result2 = `${fullName} არის ${student.age} წლის და მისი რუმმეითი არის ${student.roommate.fullName}`
+let result2 = `${student2.fullName} არის ${student2.age} წლის და მისი რუმმეითი არის ${student2.roommate.fullName}`
 
 console.log(fullName)
 console.log(result)
@@ -117,3 +127,12 @@ for(let i = 0; i < numbersArray.length; i++){
      const BREAKVALUE = 12;
      let array = [41,31,81,9,2,12,71,21,32]
 */
+const BREAKVALUE = 12
+let array = [41,31,81,9,2,12,71,21,32];
+for(let i = 0;i < array.length; i++){
+    let element = array[i];
+    if(element == BREAKVALUE){
+        break;
+    }
+    console.log(element)
+}
