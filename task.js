@@ -67,19 +67,10 @@ for(let i = 0; i < student.subjects.length; i++){
   }
 
 let fullName = student.firstName + ' ' + student.lastName;
-let student2 = {
-    fullName :student.firstName + ' ' + student.lastName,
-    age : 34,
-    subjects : ['Sports','History','Georgraphy','Math','Art'] ,
-    roommate :{
-        fullName : 'Luis Suarez',
-        age : 35,
-    }
-}
-console.log(student2.fullName)
-let result = student2.fullName + ' ' +'არის' + ' ' + student2.age + ' '  + 'წლის' + ' ' + 'და' + ' ' + 'მისი' + ' ' + 'რუმმეითი' + ' ' + 'არის' + ' ' + student2.roommate.fullName;
+student.fullName = fullName;
+let result = student.fullName + ' ' +'არის' + ' ' + student.age + ' '  + 'წლის' + ' ' + 'და' + ' ' + 'მისი' + ' ' + 'რუმმეითი' + ' ' + 'არის' + ' ' + student.roommate.fullName;
 
-let result2 = `${student2.fullName} არის ${student2.age} წლის და მისი რუმმეითი არის ${student2.roommate.fullName}`
+let result2 = `${student.fullName} არის ${student.age} წლის და მისი რუმმეითი არის ${student.roommate.fullName}`
 
 console.log(fullName)
 console.log(result)
